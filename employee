@@ -1,0 +1,22 @@
+package paperpractise;
+ class employee{
+	void  salary(int a) {
+		 System.out.println(a);
+	} }
+class manager extends employee{
+	void name(String b) {
+		 System.out.println(b);
+
+	}}
+public class Minheritance {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+employee k=new employee();
+manager k2=new manager();
+k.salary(500000);
+k2.name("rakesh");
+k2.salary(5000*2);
+	}
+
+}
