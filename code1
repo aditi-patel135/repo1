@@ -1,0 +1,13 @@
+package lab72;
+
+public class code1 {
+	   int no=1;//if it is static no need to make obj.
+	    String name="dog";
+	    String breed="pomerian";
+
+	public static void main(String args[]){
+		code1 a=new code1();
+	System.out.println(a.no +"\n" + a.name +"\n" + a.breed);//if static can directly write no instead of a.no
+
+	}
+	}
