@@ -1,0 +1,29 @@
+package lab72;
+
+
+//Program to access current object using this inside a loop
+class Movie {
+ String title;
+ double rating;
+
+ Movie(String title, double rating) {
+     this.title = title;
+     this.rating = rating;
+ }
+
+ void print() {
+     System.out.println("Movie: " + this.title + ", Rating: " + this.rating);
+ }
+
+ public static void main(String[] args) {
+     Movie[] movies = {
+         new Movie("Inception", 8.8),
+         new Movie("Interstellar", 8.6),
+         new Movie("Tenet", 7.5)
+     };
+
+     for (Movie m : movies) {
+         m.print();
+     }
+ }
+}
