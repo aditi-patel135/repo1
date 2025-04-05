@@ -1,0 +1,15 @@
+package paperpractise;
+//💡 Objective: Write a method that prints the multiplication table of a given number.
+
+public class method2 {
+ public static void multiply(int a) {
+	 for(int i=1;i<=10;i++)
+	 System.out.println(a*i);
+ }
+ 
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+multiply(6);
+	}
+
+}
