@@ -1,0 +1,36 @@
+package lab72;
+
+//Program to track number of active users using this keyword and static counter
+public class ActiveUser {
+ String username;
+ static int activeCount = 0;
+
+ ActiveUser(String username) {
+     this.username = username;
+     this.incrementCount();
+     System.out.println(this.username + " logged in. Active users: " + activeCount);
+ }
+
+ void logout() {
+     this.decrementCount();
+     System.out.println(this.username + " logged out. Active users: " + activeCount);
+ }
+
+ void incrementCount() {
+     activeCount++;
+ }
+
+ void decrementCount() {
+     activeCount--;
+ }
+
+ public static void main(String[] args) {
+     ActiveUser u1 = new ActiveUser("Aditi");
+     ActiveUser u2 = new ActiveUser("Ravi");
+     ActiveUser u3 = new ActiveUser("Neha");
+
+     u2.logout();
+     u1.logout();
+ }
+}
+
