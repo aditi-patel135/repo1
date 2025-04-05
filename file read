@@ -1,0 +1,21 @@
+package lab72;
+
+import java.io.*;
+import java.io.File;
+public class fileread {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+File f=new File("C:\\Users\\hp\\OneDrive\\Desktop\\abc.txt");
+try {
+    if(f.createNewFile()) {
+	System.out.println("successful");}
+	else {
+System.out.println("exist")	;}}
+catch(IOException e) {
+	System.out.println("error")	;
+e.printStackTrace(); } 
+}
+
+
+}
