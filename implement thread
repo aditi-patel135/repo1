@@ -1,0 +1,14 @@
+package lab72;
+
+
+class implementhtread implements Runnable {
+    public void run() {
+        System.out.println("Thread run");
+    }
+
+    public static void main(String[] args) {
+    	implementhtread t1 = new implementhtread();
+        Thread t2 = new Thread(t1);  
+        t2.start();
+    }
+}
