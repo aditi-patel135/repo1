@@ -1,0 +1,34 @@
+package paperpractise;
+//Create a program with multilevel inheritance where:
+class vehicle{
+	void speed(int speed) {
+		System.out.println(speed);}}
+
+
+class car extends vehicle{
+	void brand(String name) {
+		System.out.println(name);
+	}
+	}
+	
+
+class sportscar extends car{
+	void model(String model) {
+		System.out.println(model);
+	}
+ void speed(int a) {
+	System.out.println("speed" + a);
+	
+super.speed(500);
+}}
+public class mulinheritance {
+
+	public static void main(String[] args) {
+sportscar k=new sportscar();
+k.brand("lamborgini");
+k.model("urus");
+k.speed(305);
+
+	}
+
+}
