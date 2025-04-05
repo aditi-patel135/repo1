@@ -1,0 +1,17 @@
+package lab72;
+// Write a method that checks if a number is even or odd.
+public class pmethod {
+ static void evenorodd(int a) { 
+	 if(a%2==0) {
+			System.out.println("even");
+	 }else {
+		 System.out.println("odd");
+	 }}
+		public static void main(String args[]){
+			evenorodd(5);
+			evenorodd(26);
+			evenorodd(15);
+			
+ }
+
+}
