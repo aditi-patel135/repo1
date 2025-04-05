@@ -1,0 +1,12 @@
+package lab72;
+
+class  ExtendThreadClass extends Thread {
+    public void run() {
+        System.out.println("Thread is running...");
+    }
+
+    public static void main(String[] args) {
+    	 ExtendThreadClass t1 = new  ExtendThreadClass();  // Create a new thread
+        t1.start();                    // Start the thread
+    }
+}
