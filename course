@@ -1,0 +1,25 @@
+package lab72;
+
+//Program to use constructor overloading with this() for course info
+public class Course {
+ String title;
+ int duration;
+
+ Course(String title) {
+     this(title, 4);
+ }
+
+ Course(String title, int duration) {
+     this.title = title;
+     this.duration = duration;
+ }
+
+ void printCourse() {
+     System.out.println("Course: " + title + ", Duration: " + duration + " weeks");
+ }
+
+ public static void main(String[] args) {
+     new Course("Java").printCourse();
+     new Course("Python", 6).printCourse();
+ }
+}
