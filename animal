@@ -1,0 +1,31 @@
+package paperpractise;
+//Write a program that uses an abstract class Animal with an abstract method makeSound()//
+//and a concrete method sleep(). Create two subclasses, Dog and Cat, that implement the makeSound() method differently.
+abstract class animal{
+	abstract void makesound();
+	static void sleep() {
+		System.out.println("all animals sleep");}}
+class Dog extends animal{
+	void makesound() {
+		System.out.println("barks");
+	}
+}
+class cat extends animal{
+	void makesound() {
+		System.out.println("meows");
+	}
+}
+public class Abstraction {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+cat k1=new cat();
+Dog k2=new Dog();
+k1.makesound();
+k2.makesound();
+animal.sleep();
+Dog.sleep();
+cat.sleep();
+	}
+
+}
