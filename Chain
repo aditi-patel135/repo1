@@ -1,0 +1,23 @@
+package lab72;
+
+//Program to chain object creation using this and returning new instance
+public class Chain {
+ int value;
+
+ Chain(int value) {
+     this.value = value;
+ }
+
+ Chain increment() {
+     return new Chain(this.value + 1);
+ }
+
+ void print() {
+     System.out.println("Value: " + value);
+ }
+
+ public static void main(String[] args) {
+     Chain c = new Chain(5);
+     c.increment().increment().increment().print();
+ }
+}
