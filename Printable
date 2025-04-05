@@ -1,0 +1,28 @@
+package paperpractise;
+//Multiple inheritance using interfaces:
+
+//create two interfaces: Printable and Showable, each with a display() method.
+
+//Create a class Demo that implements both interfaces.
+interface Printable{
+	public void display() ;
+}
+interface Showable{
+	public void display() ;
+}
+class demo implements Printable,Showable{
+	public void display() {
+		System.out.println("hello");
+	}
+	
+}
+public class Interface { 
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+demo d1=new demo();
+d1.display();
+
+	}
+
+}
